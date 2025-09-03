@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student Portfolio</title>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+<h1 id="main-title">Welcome to My Portfolio</h1>
+<p title="Introduction">This is a basic HTML-only portfolio created as a beginner task.</p>
+</header>
+
+<!-- Navigation -->
+<nav>
+<a href="#">Home</a> |
+<a href="#">About</a> |
+<a href="#">Contact</a>
+</nav>
+
+<hr>
+
+<!-- Main Content -->
+<main>
+<!-- Profile Section -->
+<section id="profile">
+  <h2>About Me</h2>
+  <img src="images/profile.jpg" alt="Profile Picture" width="150" height="150">
+  <p>Hello! My name is <strong>John Doe</strong>. I am a beginner web developer learning HTML.</p>
+</section>
+
+<hr>
+
+<!-- Skills Section -->
+<section id="skills">
+  <h2>My Skills</h2>
+
+  <h3>Soft Skills</h3>
+  <ul class="soft-skills">
+    <li>Teamwork</li>
+    <li>Communication</li>
+    <li>Time Management</li>
+  </ul>
+
+  <h3>Technical Skills</h3>
+  <ol class="tech-skills">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ol>
+</section>
+
+<hr>
+
+<!-- Table Section -->
+<section id="grades">
+  <h2>Subjects & Grades</h2>
+  <table border="1" cellpadding="10">
+    <tr>
+      <th>Subject</th>
+      <th>Marks</th>
+      <th>Grade</th>
+    </tr>
+    <tr>
+      <td>HTML</td>
+      <td>95</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>CSS</td>
+      <td>88</td>
+      <td>B+</td>
+    </tr>
+    <tr>
+      <td colspan="2">JavaScript</td>
+      <td>B</td>
+    </tr>
+  </table>
+</section>
+
+<hr>
+
+<!-- Article Section -->
+<article id="story">
+  <h2>My Journey</h2>
+  <p>I started learning web development in 2025. My goal is to become a full-stack developer one day.</p>
+  <blockquote cite="<https://developer.mozilla.org>">
+    “Learning never exhausts the mind.” — Leonardo da Vinci
+  </blockquote>
+</article>
+
+<hr>
+
+<!-- Form Section -->
+<section id="registration-form">
+  <h2>Register for My Newsletter</h2>
+
+  <form action="/submit" method="post">
+
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="male"> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br><br>
+
+    <label>Hobbies:</label><br>
+    <input type="checkbox" name="hobby" value="Reading"> Reading<br>
+    <input type="checkbox" name="hobby" value="Gaming"> Gaming<br><br>
+
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob"><br><br>
+
+    <label for="subject">Favorite Subject:</label><br>
+    <select id="subject" name="subject">
+      <option value="">--Select--</option>
+      <option value="html">HTML</option>
+      <option value="css">CSS</option>
+      <option value="js">JavaScript</option>
+    </select><br><br>
+
+    <label for="resume">Upload Resume:</label><br>
+    <input type="file" id="resume" name="resume"><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</section>
+
+
+</main>
+
+<hr>
+
+<!-- Footer Section -->
+<footer>
+<p>© 2025 John Doe. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
